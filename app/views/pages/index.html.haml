@@ -1,0 +1,7 @@
+%h1 Subtitle to Text Converter
+
+.well.center
+  = form_tag "subtitles/process_subtitle_file", multipart: true do
+    = file_field_tag :subtitle_file, class: "center"
+    %br/
+    = submit_tag "Process", class: "btn btn-primary"
